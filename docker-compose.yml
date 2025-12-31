@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  attention_nmt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: attention_nmt
+    ports:
+      - "7860:7860"
+    restart: unless-stopped

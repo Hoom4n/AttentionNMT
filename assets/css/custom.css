@@ -1,0 +1,79 @@
+/* Background */
+.gradio-container {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee) !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+}
+.dark .gradio-container {
+    background: linear-gradient(135deg, #1e1a5e, #2a0a3a) !important;
+}
+
+/* Buttons */
+button {
+    border-radius: 14px !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;
+    background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+    transition: transform 0.15s ease-in-out;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25) !important;
+}
+
+/* Title */
+#title {
+    font-size: 2.8em !important;
+    font-weight: 700 !important;
+    color: #1e3a8a;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+}
+.dark #title {
+    color: #e0f7fa !important;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Summary / Description */
+#summary {
+    color: #374151;
+    background: rgba(255,255,255,0.7);
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+    text-align: justify !important;
+}
+.dark #summary {
+    color: #d1d5db !important;
+    background: rgba(30, 30, 46, 0.6) !important;
+}
+
+/* Help / Info Box */
+#help_text {
+    color: #1f2937;
+    background: rgba(240, 249, 255, 0.9);
+    padding: 16px;
+    border-left: 5px solid #3b82f6;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 12px;
+    text-align: justify !important;
+}
+.dark #help_text {
+    color: #d1d5db !important;
+    background: rgba(30, 30, 46, 0.7) !important;
+    border-left: 5px solid #60a5fa !important;
+}
+
+/* RTL Support */
+.persian {
+    direction: rtl;
+    text-align: right;
+}
+#summary.persian, #help_text.persian {
+    text-align: justify !important;
+}
